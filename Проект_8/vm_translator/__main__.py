@@ -174,7 +174,7 @@ def translate_vm_files():
 
 
 def unite_files():
-    with open("NestedCall.asm", "at+") as fout:
+    with open("NestedCall.asm", "at+") as fout: # Вместо NestedCall.asm подставьте нужное вам название для выводного файла.
         fout.write(start_programm() + "\n\n")
         for i in translated:
             fout.write(f"//file: {i}\n")
